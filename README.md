@@ -1,4 +1,4 @@
-# email_birthdaybot
+# python-Birthdaybot
 
 <br>step 1 :
      edit the excel file
