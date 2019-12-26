@@ -9,7 +9,7 @@ def send_mail(name,email_id):
     msg['Subject'] = 'Happy Birthday '+name.title() #email subject
     msg['From'] = EMAIL_ADDRESS     #sender email id 
     msg['To'] = email_id            #reciever email id 
-    msg.set_content('Happy '+name.title()+'')# content of email
+    msg.set_content('Happy Birthday'+name.title()+'')# content of email
 
     with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
             try:
