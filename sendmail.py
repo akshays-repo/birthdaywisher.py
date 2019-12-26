@@ -2,14 +2,14 @@ import os
 import smtplib 
 from email.message import EmailMessage
 
-EMAIL_ADDRESS = 'example@gmail.com'   #sender email id goes here -> replace the email id 
-EMAIL_PASSWORD = 'password'           # password of user -> replace the password
+EMAIL_ADDRESS = 'example@gmail.com'  
+EMAIL_PASSWORD = 'password'          
 def send_mail(name,email_id):
     msg = EmailMessage()
-    msg['Subject'] = 'Happy Birthday '+name.title() #email subject
-    msg['From'] = EMAIL_ADDRESS     #sender email id 
-    msg['To'] = email_id            #reciever email id 
-    msg.set_content('Happy Birthday'+name.title()+'')# content of email
+    msg['Subject'] = 'Birtday wish' 
+    msg['From'] = EMAIL_ADDRESS
+    msg['To'] = email_id
+    msg.set_content(f'Happy birtday {name.title()}')
 
     with smtplib.SMTP_SSL('smtp.gmail.com',465) as smtp:
             try:
@@ -17,5 +17,5 @@ def send_mail(name,email_id):
                 smtp.send_message(msg)
                 print("send succesfully\n")
             except TypeError:
-                print("Couldn't send ! some error happend")
+                print("Couldn't send ! some error occured")
 
