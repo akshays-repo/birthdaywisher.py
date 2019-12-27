@@ -39,7 +39,7 @@ def checkbirtday(data,choice):
                 print(f'Sending a Wish to {name}.' )
                 sendmail.send_mail(name,email_id)  #send mail 
             else:
-                pass
+                 print(f'Today is not {name} birthday')
         else:
             pass
 
