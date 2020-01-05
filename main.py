@@ -45,7 +45,7 @@ def checkbirtday(data,choice):
 
 
 #Begin 
-print('\n\nWelcome to PYTHON BIRTH BOT')
+print('\n\nWelcome to PYTHON BIRTHDAY BOT')
 print(' ****************************')
 choice = '1'
 while choice != '3':
