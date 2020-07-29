@@ -1,6 +1,6 @@
 # birthdaywisher.py
 
-An simple python program to send birthday wish from spreedsheeet
+A simple python program to send birthday wish from a spreadsheet
 
 Config gmail and add username and password in `` sendmail.py``
 
