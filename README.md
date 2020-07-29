@@ -1,12 +1,9 @@
-# python-Birthdaybot
+# birthdaywisher.py
 
-<br>step 1 :
-     edit the excel file
-     add a name, date of birth and email id 
-<br>step 2:
-    config the Gmail and add the email id and password into the sendmail.py
-<br>step 3:
-    Run main.py
- -> python main.py 
+An simple python program to send birthday wish from spreedsheeet
 
+Config gmail and add username and password in `` sendmail.py``
 
+Edit  ``dob.xlsx`` file
+
+run  ``python main.py``
